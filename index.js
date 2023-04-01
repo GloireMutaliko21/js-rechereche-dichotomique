@@ -3,7 +3,7 @@ const sortTab = (tab) => tab.sort((a, b) => a - b);
 
 const tab = [6, 3, 7, 10, -4, 9, 6, 1, 2, 7, 9, 8];
 
-let max = tab.length, min = 1, mediane = Math.round((min + max) / 2);
+let max = tab.length - 1, min = 0, mediane = Math.round((min + max) / 2);
 let searchValue;
 
 // read user input searched value
