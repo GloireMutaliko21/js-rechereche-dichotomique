@@ -24,11 +24,11 @@ readline.question('Enter the search value : ', (value) => {
         }
         mediane = Math.round((min + max) / 2);
     }
-
+    // console.log(tab);
     if (searchValue === tab[mediane]) {
-        console.log("Value founded at position ", mediane);
+        console.log(`${searchValue} founded at position `, mediane);
     } else {
-        console.log("Value does not exist in the array");
+        console.log(`${searchValue} does not exist in the array`);
     }
 
     readline.close();
