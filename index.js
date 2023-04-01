@@ -1,3 +1,5 @@
+const sortTab = (tab) => tab.sort((a, b) => a - b);
+
 const tab = [6, 3, 7, 10, -4, 9, 6, 1, 2, 7, 9, 8];
 
 let max = tab.length, min = 1, mediane = (min + max) / 2;
@@ -9,8 +11,8 @@ const readline = require('readline').createInterface({
 });
 
 readline.question('Entrez une valeur : ', (nom) => {
-    if (typeof nom !== "number") {
-        return console.log("Invalid value")
-    }
-    readline.close();
+    searchValue = nom;
+    return readline.close();
 });
+
+console.log(sortTab(tab));
